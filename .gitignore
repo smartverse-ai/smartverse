@@ -1,1 +1,36 @@
-node_modules
+# ⛔️ تجاهل مجلدات النظام
+.DS_Store
+Thumbs.db
+
+# ⛔️ تجاهل مجلدات البناء المؤقتة
+.next/
+out/
+dist/
+build/
+
+# ⛔️ تجاهل مجلدات بيئة العمل
+node_modules/
+.vscode/
+.env
+.env.local
+
+# ⛔️ تجاهل ملفات النظام
+*.log
+*.lock
+*.tmp
+
+# ⛔️ تجاهل الملفات والوسائط الكبيرة
+public/audios/
+public/videos/
+*.mp4
+*.mp3
+*.exe
+*.zip
+*.node
+
+# ⛔️ تجاهل ملفات التثبيت
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ✅ أضف هنا أي مسارات ملفات أخرى تريد تجاهلها مستقبلاً
