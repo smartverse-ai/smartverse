@@ -35,7 +35,7 @@ export async function submitAudio(payload: SubmitAudioPayload): Promise<Transcri
 import { useState } from "react";
 import { submitAudio } from "./api";
 import { TranscriptionResult } from "./types";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 export default function AudioForm() {
   const [file, setFile] = useState<File | null>(null);

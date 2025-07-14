@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Textarea } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import ResultBox from "./ui/ResultBox";
 
 export const SummarizerForm = () => {

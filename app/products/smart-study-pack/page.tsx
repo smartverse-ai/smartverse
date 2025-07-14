@@ -1,5 +1,5 @@
 // app/products/smart-study-pack/page.tsx
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 export default function SmartStudyPackPage() {
   return (
