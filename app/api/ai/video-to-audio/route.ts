@@ -34,7 +34,7 @@ async function cleanOldFiles(dir: string, maxAgeMinutes = 60) {
   }
 }
 
-export async function POST(req: Request) {
+export async function POST(req: Request): Promise<Response> {
   const contentType = req.headers.get('content-type') || '';
   if (!contentType.includes('multipart/form-data')) {
     return NextResponse.json(
@@ -78,7 +78,7 @@ export async function POST(req: Request) {
     // 💾 كتابة ملف الفيديو المؤقت
     await writeFile(inputPath, buffer);
 
-    return new Promise((resolve) => {
+    return await new Promise<Response>((resolve) => {
       ffmpeg(inputPath)
         .audioCodec('libmp3lame')
         .audioBitrate(128)
@@ -102,7 +102,7 @@ export async function POST(req: Request) {
             )
           );
         })
-        .save(outputPath); // ✅ مباشرة حفظ الملف الناتج
+        .save(outputPath);
     });
   } catch (error) {
     console.error('❌ خطأ عام في السيرفر:', error);
