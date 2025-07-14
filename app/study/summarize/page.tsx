@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import axios from 'axios'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { toast } from 'sonner'
 import { jsPDF } from 'jspdf'
 import { saveAs } from 'file-saver'

@@ -1,7 +1,7 @@
 // /app/page.tsx
 
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 
 const featuredProducts = [

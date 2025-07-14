@@ -1,6 +1,6 @@
 // app/products/summarizer/page.tsx
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { Sparkles } from "lucide-react";
 
 export default function SummarizerProductPage() {
